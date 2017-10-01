@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="style-paragraph.js"></script>
+</head>
+<body>
+    <p>
+        <span class="number"></span>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        Alias nostrum odio quo? Ab aliquam animi aut blanditiis, corporis culpa dolor enim eos iusto magni nisi sequi similique sunt ut voluptates.
+    </p>
+    <p>
+        <span class="number"></span>
+        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+    </p>
+    <p>
+        <span class="number"></span>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        Alias nostrum odio quo? Ab aliquam animi aut blanditiis, corporis culpa dolor enim eos iusto magni nisi sequi similique sunt ut voluptates.
+
+    </p>
+    <p>
+        <span class="number"></span>
+        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+    </p>
+   <img src="http://www.hiddenwebgenius.com/wp-content/uploads/2013/11/charlotte-web-design.jpg" alt=""/>
+    <img src="http://www.cmsmagazine.ru/img_out/articles_elements/upload8zt4udhptz.jpg"/>
+    <h4>Количество нажатий: <span id="counter">0</span></h4>
+    <h2>Some text</h2>
+    <h2>Test text</h2>
+    <button id="redText" onclick="redText()">redText</button>
+    <button onclick="increment()">Click me</button>
+    <button onclick="shadowImg()">shadow Img</button>
+    <button onclick="increment()">Push me</button>
+    <button onclick="addNumberParagrap()">numberPa</button>
+    <br>
+    <br>
+    <br>
+    <label for="">Число:</label><input type="text" id="number" />
+    <label for="">Степень:</label><input type="text" id="pow" />
+    <button onclick="mathPow()">pow</button>
+    <br>
+    <br>
+    <label for="">Название тега:</label><input type="text" id="nameTag" />
+    <button onclick="underLine(document.getElementById('nameTag'))">underLine</button>
+    <br>
+    <br>
+    <label for="">Ваш возраст:</label>
+    <input type="text" id="age">
+    <button onclick="reg(document.getElementById('age'))">Войти</button>
+    <br>
+    <br>
+    <label for="">Ваш возраст:</label>
+    <input type="text" id="age-user">
+    <button onclick="regAge(document.getElementById('age-user'))">Войти</button>
+    <br>
+    <br>
+    <label for="">Введите число:</label>
+    <input type="text" id="enter-number">
+    <button onclick='document.getElementById("result").innerHTML=numberOperation((document.getElementById("enter-number")))'>OK</button>
+<div id="result"></div>
+    <br>
+    <label for="">Введи число:</label>
+    <input type="text" id="random-number">
+    <button onclick='guessNumber(document.getElementById("random-number"))' id="play">Играть</button>
+</body>
+</html>
