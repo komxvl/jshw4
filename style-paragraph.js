@@ -1,4 +1,4 @@
-var randomNumber = Math.floor(Math.random() * 2);
+var randomNumber = Math.floor(Math.random() * 11) + 0;
 window.onload = function () {
 };
 function redText(){
@@ -22,11 +22,8 @@ function addNumberParagrap() {
     console.log(allParagraphs);
 
     for(var i = 0 ;i<allParagraphs.length;i++){
-        var number = i;
-        console.log(number);
-       allParagraphs[i].innerText+=""+number;
-        var numberId = document.getElementsByClassName('number');
-        numberId.innerHTML = i;
+
+       allParagraphs[i].innerText=i+" "+allParagraphs[i].innerText;
 
     }
 }
@@ -117,5 +114,16 @@ function guessNumber(yourNumber) {
     console.log("poputka = ",tryStep);
     yourNumber.value = '';
 
+}
+
+
+
+function arrayLength(arrayEl){
+    if(arrayEl.length == 0 ){
+        alert("Ошибка");
+    }
+    else{
+        alert("Длинна = "+array.length);
+    }
 }
 
